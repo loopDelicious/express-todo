@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+div
+  form(action='/' method='post')
+    input(type='text' class='input' placeholder='Add an item to the TODO list')
+    button(type='submit' value='Submit')
+
+
