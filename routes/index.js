@@ -11,7 +11,6 @@ var connectionString = "postgres://localhost:5432/todo";
 var db = pgp(connectionString);
 
 
-
 // GET items from database
 router.get('/todo', function(req, res, next) {
 
@@ -56,7 +55,7 @@ router.post('/todo', function(req, res, next) {
 
 
 // DELETE an item from the todos list
-router.delete('/todo/:todo_id', function(req, res,next) {
+router.delete('/todo/:id', function(req, res,next) {
   var itemID = parseInt(req.params.id);
   db.result('delete from items where id = $1', itemID)
     .then(function(result) {
@@ -72,6 +71,7 @@ router.delete('/todo/:todo_id', function(req, res,next) {
 });
 
 
+router.use(express.static('public'));
 
 
 
