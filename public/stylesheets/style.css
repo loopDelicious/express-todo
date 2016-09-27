@@ -10,7 +10,7 @@ a {
   color: #00B7FF;
 }
 
-.input {
+div#task {
   width: 500px;
   margin: 10px;
 }

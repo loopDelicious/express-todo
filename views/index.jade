@@ -4,12 +4,21 @@ block content
   h1= title
   p Welcome to #{title}
 
-  div
-    form(action='/todo' method='post')
+  div#task
+    form(action='/todo', method='post')
       div(data-role='fieldcontain')
-        input(id='task', type='text', class='input', placeholder='Add an item to the TODO list')
+        input(id='task', name='text', type='text', class='input', placeholder='Add an item to the TODO list')
       div(data-role='fieldcontain')
         input(type='submit', value='Submit')
+
+  div#list
+    each value in todoItems
+      if value.complete == false
+        form(action='/todo/' + value.id, method='post')
+          div(data-role='fieldcontain')
+            label
+              input(type='checkbox', class='input' onchange='this.form.submit()')
+              | #{value.text}
 
 
 
