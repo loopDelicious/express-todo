@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Gotham-Light, Helvetica, Arial, sans-serif;
   background: url(/images/romantic-bokeh.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -10,7 +10,31 @@ a {
   color: #00B7FF;
 }
 
+input#task {
+  width: 300px;
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 10px 0 10px 0;
+}
+
+input[type="submit"] {
+  padding: 4px 10px 4px 10px;
+  margin: 12px 0 36px;
+  font-size: 15px;
+  background-color: orchid;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+input[type='checkbox'] {
+  margin: 0 10px 10px;
+  height: 20px;
+}
+
 div#task {
   width: 500px;
   margin: 10px;
 }
+
