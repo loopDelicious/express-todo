@@ -13,10 +13,12 @@ a {
 input#task {
   width: 300px;
   font-size: 15px;
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   border-radius: 4px;
+  background: rgba(255,255,255,0.5);
   padding: 4px;
   margin: 10px 0 10px 0;
+  /*todo: auto focus upon page load; */
 }
 
 input[type="submit"] {
@@ -31,6 +33,7 @@ input[type="submit"] {
 input[type='checkbox'] {
   margin: 0 10px 10px;
   height: 20px;
+  background: rgba(225,225,225,0.8);
 }
 
 div#task {
