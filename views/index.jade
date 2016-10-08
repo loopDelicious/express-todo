@@ -18,9 +18,9 @@ block content
         form(action='/todo/' + value.id, method='post')
           div(data-role='fieldcontain')
             label
-              input(type='checkbox', class='btn' onchange='hidden.form.display()')
+              input(type='checkbox', class='input' onSelect='this.form.display()')
 
-              input(type='hidden', class='input' onchange='this.form.submit()')
+              input(type='hidden', class='btn submit' onchange='this.form.submit()')
               | #{value.text}
 //            todo display hidden confirmation button upon selecting checkbox
 
