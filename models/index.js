@@ -3,7 +3,7 @@
 var fs        = require("fs");
 var path      = require("path");
 var Sequelize = require("sequelize");
-var sequelize = new Sequelize('swoosh', 'swoosh', 'swoosh', {
+var sequelize = new Sequelize('todo', null, null, {
   host: 'localhost',
   dialect: 'postgres',
   pool: {

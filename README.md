@@ -1,6 +1,13 @@
-## Express TODO app
+# Express TODO app
 
 Using Express.js and PostgreSQL
 
-For development:
-run `nodemon ./bin/www` and go to localhost:3000
+Install node dependencies
+
+    $ npm install
+
+To develop: run nodemon, and then open http://localhost:3000
+    
+    $ nodemon ./bin/www
+
+
