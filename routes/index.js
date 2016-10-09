@@ -11,6 +11,12 @@ var connectionString = "postgres://localhost:5432/todo";
 var db = pgp(connectionString);
 
 
+// create postgres table if not exists
+db.none("CREATE TABLE IF NOT EXISTS items (id SERIAL, text TEXT, complete BOOLEAN)").then(function() {
+    console.log ('created table');
+});
+
+
 // GET items from database
 router.get('/', function(req, res, next) {
 
