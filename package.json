@@ -14,9 +14,15 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "pg-promise": "^5.3.3",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
     "nodemon": "^1.10.2"
   }
 }
